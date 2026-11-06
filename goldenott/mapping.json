@@ -109,6 +109,12 @@
       "source_id": "Al.Horreya.TV.ae"
     },
     {
+      "output_id": "Al.Masriya.fr",
+      "source": "FR1",
+      "source_id": "Al.Masriya.fr",
+      "name": "Al Masriya Egypte — correspondance à vérifier avant attribution"
+    },
+    {
       "output_id": "Al.Nas.ae",
       "source": "AE1",
       "source_id": "Al.Nas.ae"
@@ -449,8 +455,8 @@
     {
       "output_id": "canalplus.fr",
       "source": "FR1",
-      "source_id": "CANAL+.UHD.HDR.fr",
-      "name": "FR - CANAL+ 4K HDR"
+      "source_id": "CANAL+.fr",
+      "name": "FR - CANAL+ (grille principale, version HDR distincte)"
     },
     {
       "output_id": "canalplusdocs.fr",
@@ -487,6 +493,12 @@
       "source": "BE2",
       "source_id": "CANVAS.be",
       "name": "BE - CANVAS HEVC"
+    },
+    {
+      "output_id": "Carthage+.fr",
+      "source": "FR1",
+      "source_id": "Carthage+.fr",
+      "name": "Carthage+ Tunisie — correspondance à vérifier avant attribution"
     },
     {
       "output_id": "CARTOON.NETWORK.be",
@@ -1886,6 +1898,12 @@
       "source_id": "Trek.HD.be"
     },
     {
+      "output_id": "Tunisia.1.fr",
+      "source": "FR1",
+      "source_id": "Tunisia.1.fr",
+      "name": "Tunisia 1 (Watania 1) — correspondance à attribuer manuellement"
+    },
+    {
       "output_id": "TV.MONACO.fr",
       "source": "FR1",
       "source_id": "TV.MONACO.fr"
@@ -1975,6 +1993,12 @@
       "source_id": "Watan.TV.ae"
     },
     {
+      "output_id": "Watania.2.fr",
+      "source": "FR1",
+      "source_id": "Watania.2.fr",
+      "name": "Watania 2 — correspondance à attribuer manuellement"
+    },
+    {
       "output_id": "Yalla.Mosar3a.ae",
       "source": "AE1",
       "source_id": "Yalla.Mosar3a.ae"
@@ -2006,5 +2030,7 @@
   ],
   "limitations": "Only existing unique Xtream IDs with guide candidates; no invented schedules, no automatic mapping for missing Xtream IDs.",
   "caution": "Guide with programmes from public EPG sources only; no live broadcast confirmation; empty or unmatched channels remain empty.",
-  "coverage_note": "Identifiants nouveaux proposés dans le rapport GoldenOTT daté, sans preuve de correspondance aux flux en direct. Les chaînes sans epg_channel_id dans Xtream exigent une attribution."
+  "coverage_note": "Identifiants nouveaux proposés dans le rapport GoldenOTT daté, sans preuve de correspondance aux flux en direct. Les chaînes sans epg_channel_id dans Xtream exigent une attribution.",
+  "manual_assignment_warning": "Les 4 IDs supplémentaires Tunisia.1.fr, Watania.2.fr, Al.Masriya.fr et Carthage+.fr ne sont PAS des identifiants Xtream existants garantis; une attribution par chaîne peut être nécessaire. Ne jamais mapper automatiquement watania1.tn: cet identifiant est utilisé aussi pour El Hiwar Ettounsi et Attessia dans le catalogue Xtream.",
+  "source_integrity_note": "L'EPG n'atteste pas l'exactitude du flux vidéo; privilégier les identifiants identiques et rejeter les noms ambigus."
 }
