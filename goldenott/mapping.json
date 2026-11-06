@@ -2039,5 +2039,134 @@
   "coverage_note": "Identifiants nouveaux proposés dans le rapport GoldenOTT daté, sans preuve de correspondance aux flux en direct. Les chaînes sans epg_channel_id dans Xtream exigent une attribution.",
   "manual_assignment_warning": "Les 4 IDs supplémentaires Tunisia.1.fr, Watania.2.fr, Al.Masriya.fr et Carthage+.fr ne sont PAS des identifiants Xtream existants garantis; une attribution par chaîne peut être nécessaire. Ne jamais mapper automatiquement watania1.tn: cet identifiant est utilisé aussi pour El Hiwar Ettounsi et Attessia dans le catalogue Xtream.",
   "source_integrity_note": "L'EPG n'atteste pas l'exactitude du flux vidéo; privilégier les identifiants identiques et rejeter les noms ambigus.",
-  "rotana_note": "Les versions Rotana Cinema Egypte et KSA ont des grilles distinctes. Attention: l'export Xtream attribue également rotanacinema.eg à AR - ROTANA CINEMA KSA FHD; cette chaîne mal identifiée nécessite une correction dans GoldenOTT ou chez le fournisseur pour afficher une grille réellement adaptée."
+  "rotana_note": "Les versions Rotana Cinema Egypte et KSA ont des grilles distinctes. Attention: l'export Xtream attribue également rotanacinema.eg à AR - ROTANA CINEMA KSA FHD; cette chaîne mal identifiée nécessite une correction dans GoldenOTT ou chez le fournisseur pour afficher une grille réellement adaptée.",
+  "official_bein": [
+    {
+      "output_id": "beinsports3.fr",
+      "region": "fr-fr",
+      "site_id": "6DB008B8-66DA-423E-805D-616211D4B174",
+      "name": "beIN SPORTS 3 France"
+    },
+    {
+      "output_id": "beinsportsmax10.fr",
+      "region": "fr-fr",
+      "site_id": "6F425028-14F0-4E38-B776-71A9DB3F3493",
+      "name": "beIN SPORTS MAX 10 France"
+    },
+    {
+      "output_id": "beinsportsmax7.fr",
+      "region": "fr-fr",
+      "site_id": "9B4708C5-F5F0-452A-8157-4661C30FAE6A",
+      "name": "beIN SPORTS MAX 7 France"
+    },
+    {
+      "output_id": "beinsportsmax8.fr",
+      "region": "fr-fr",
+      "site_id": "76D2430C-8BCB-41BD-A1DE-FBA0D58C5E8A",
+      "name": "beIN SPORTS MAX 8 France"
+    },
+    {
+      "output_id": "beinsports1.fr",
+      "region": "fr-fr",
+      "site_id": "66265DD1-D2AA-4A89-9412-2455186E90ED",
+      "name": "beIN SPORTS 1 France"
+    },
+    {
+      "output_id": "beinsports2.fr",
+      "region": "fr-fr",
+      "site_id": "1E886E98-3104-4D8E-A97F-734B23108E8A",
+      "name": "beIN SPORTS 2 France"
+    },
+    {
+      "output_id": "beinsportsmax5.fr",
+      "region": "fr-fr",
+      "site_id": "A4425E44-B004-4137-ACB4-458BA4D710F8",
+      "name": "beIN SPORTS MAX 5 France"
+    },
+    {
+      "output_id": "beinsportsmax6.fr",
+      "region": "fr-fr",
+      "site_id": "BBD26D71-897D-4799-87A1-A87120130D48",
+      "name": "beIN SPORTS MAX 6 France"
+    },
+    {
+      "output_id": "beinsportsmax4.fr",
+      "region": "fr-fr",
+      "site_id": "EF7E0369-CFD9-4607-9238-EC483E6D58A3",
+      "name": "beIN SPORTS MAX 4 France"
+    },
+    {
+      "output_id": "beinsportsmax9.fr",
+      "region": "fr-fr",
+      "site_id": "FB208953-1C70-4D1E-B918-103AB02AB181",
+      "name": "beIN SPORTS MAX 9 France"
+    },
+    {
+      "output_id": "beinsports8.qa",
+      "region": "en-mena",
+      "site_id": "0F8D20A4-D46C-4B18-9242-8E7B3E978FF8",
+      "name": "beIN SPORTS 8 MENA"
+    },
+    {
+      "output_id": "beinsports9.qa",
+      "region": "en-mena",
+      "site_id": "5C08D9D3-C713-4F1F-947E-87C761428B9B",
+      "name": "beIN SPORTS 9 MENA"
+    },
+    {
+      "output_id": "beinsportsnews.qa",
+      "region": "en-mena",
+      "site_id": "7B558284-F996-4123-9584-1E5D01844270",
+      "name": "beIN SPORTS News MENA"
+    },
+    {
+      "output_id": "beinsports3.qa",
+      "region": "en-mena",
+      "site_id": "8AEA2426-D451-4BA5-BF48-114A1F04B1A8",
+      "name": "beIN SPORTS 3 MENA"
+    },
+    {
+      "output_id": "beinsports1.qa",
+      "region": "en-mena",
+      "site_id": "7836FEA9-6B39-4A1A-8352-DC5FCB97A16C",
+      "name": "beIN SPORTS 1 MENA"
+    },
+    {
+      "output_id": "beinsportsxtra2.qa",
+      "region": "en-mena",
+      "site_id": "27E67022-B943-4913-9AF3-AFD3DAC9854B",
+      "name": "beIN SPORTS XTRA 2 MENA"
+    },
+    {
+      "output_id": "beinsports5.qa",
+      "region": "en-mena",
+      "site_id": "964E6246-CA95-410B-82C4-EA75DD979435",
+      "name": "beIN SPORTS 5 MENA"
+    },
+    {
+      "output_id": "beinsports7.qa",
+      "region": "en-mena",
+      "site_id": "A892063B-A5D9-4199-95AC-6A214515FA6B",
+      "name": "beIN SPORTS 7 MENA"
+    },
+    {
+      "output_id": "beinsports4.qa",
+      "region": "en-mena",
+      "site_id": "DB9361E8-B3EB-4D6F-9A82-75B5F09E2F92",
+      "name": "beIN SPORTS 4 MENA"
+    },
+    {
+      "output_id": "beinsports6.qa",
+      "region": "en-mena",
+      "site_id": "E24D9C11-A8B4-4C7F-AD3E-B3364FB6D5A2",
+      "name": "beIN SPORTS 6 MENA"
+    },
+    {
+      "output_id": "beinsports2.qa",
+      "region": "en-mena",
+      "site_id": "FD1DD7DD-1E7B-4AA2-8682-BFA17338E653",
+      "name": "beIN SPORTS 2 MENA"
+    }
+  ],
+  "official_bein_policy": "Use beinsports.com public EPG first when valid and current; if unavailable preserve existing XMLTV guide. Site metadata is not proof the IPTV stream matches its claimed channel."
 }
