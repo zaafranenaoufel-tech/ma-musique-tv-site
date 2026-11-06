@@ -17,6 +17,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 from pathlib import Path
+from official_national import fetch_national_channel
 
 ROOT=Path(__file__).resolve().parents[1]
 MAP=ROOT/"mapping.json"
@@ -164,6 +165,10 @@ def main():
         if oid not in targets[key][sid]:targets[key][sid].append(oid)
         name=alias.get("name","")
         if name and name not in display[oid]:display[oid].append(name)
+    for source in cfg.get("official_national",[]):
+        oid=source.get("output_id","")
+        name=source.get("name","")
+        if oid and name and name not in display[oid]:display[oid].append(name)
     now=dt.datetime.now(UTC)
     counts=defaultdict(int)
     successful=[]
@@ -174,7 +179,29 @@ def main():
         official_done=set()
         official_errors={}
         official_count=0
+        national_done=set()
+        national_errors={}
+        national_count=0
         with fragment.open("wb") as output:
+            national_targets=cfg.get("official_national",[])
+            if national_targets:
+                with ThreadPoolExecutor(max_workers=6) as pool:
+                    futures=[pool.submit(fetch_national_channel,a,now) for a in national_targets]
+                    for future in as_completed(futures):
+                        try:
+                            oid,entries,error=future.result()
+                        except Exception as exc:
+                            print("OFFICIAL NATIONAL ERROR:",str(exc)[:200],flush=True)
+                            continue
+                        if error:
+                            national_errors[oid]=error
+                            continue
+                        national_done.add(oid)
+                        for entry in entries:
+                            output.write(ET.tostring(entry,encoding="utf-8")+b"\n")
+                            counts[oid]+=1
+                            national_count+=1
+            official_done.update(national_done)
             official_targets=cfg.get("official_bein",[])
             if official_targets:
                 with ThreadPoolExecutor(max_workers=4) as pool:
@@ -225,7 +252,11 @@ def main():
       "sources_downloaded":successful,
       "sources_failed":failed,
       "target_aliases":len(cfg.get("aliases",[])),
-      "official_bein_channels":len(official_done),
+      "official_bein_channels":len(official_done-national_done),
+      "official_national_channels":len(national_done),
+      "official_national_programmes":national_count,
+      "official_national_attempted":len(cfg.get("official_national",[])),
+      "official_national_failures":national_errors,
       "official_bein_programmes":official_count,
       "official_bein_attempted":len(cfg.get("official_bein",[])),
       "official_bein_failures":official_errors,
