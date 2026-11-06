@@ -96,7 +96,10 @@
     {
       "output_id": "Al.Aoula.ae",
       "source": "AE1",
-      "source_id": "Al.Aoula.ae"
+      "source_id": "Al.Aoula.ae",
+      "display_names": [
+        "EG - AL AOULA HD"
+      ]
     },
     {
       "output_id": "Al.Araby.2.HD.ae",
@@ -112,7 +115,12 @@
       "output_id": "Al.Masriya.fr",
       "source": "FR1",
       "source_id": "Al.Masriya.fr",
-      "name": "Al Masriya Egypte — correspondance à vérifier avant attribution"
+      "name": "Al Masriya Egypte — correspondance à vérifier avant attribution",
+      "display_names": [
+        "EG - AL MASRIYA HD",
+        "AL MASRIYA",
+        "AL MASRIYA EGYPT"
+      ]
     },
     {
       "output_id": "Al.Nas.ae",
@@ -122,7 +130,11 @@
     {
       "output_id": "Al.Qahera.News.ae",
       "source": "AE1",
-      "source_id": "Al.Qahera.News.ae"
+      "source_id": "Al.Qahera.News.ae",
+      "display_names": [
+        "EG - AL QAHERA NEWS HD",
+        "AL QAHERA NEWS"
+      ]
     },
     {
       "output_id": "Al.Qanat.9.ae",
@@ -222,7 +234,12 @@
       "output_id": "beinsports1.fr",
       "source": "FR1",
       "source_id": "beIN.SPORTS.1.fr",
-      "name": "FR - BEIN SPORTS 1 FHD"
+      "name": "FR - BEIN SPORTS 1 FHD",
+      "display_names": [
+        "FR - BEIN SPORTS 1 FHD",
+        "FR - BEIN SPORTS 1 HEVC",
+        "FR - BEIN SPORTS 1 SD"
+      ]
     },
     {
       "output_id": "beinsports1.qa",
@@ -234,7 +251,12 @@
       "output_id": "beinsports2.fr",
       "source": "FR1",
       "source_id": "beIN.SPORTS.2.fr",
-      "name": "FR - BEIN SPORTS 2 FHD"
+      "name": "FR - BEIN SPORTS 2 FHD",
+      "display_names": [
+        "FR - BEIN SPORTS 2 FHD",
+        "FR - BEIN SPORTS 2 HEVC",
+        "FR - BEIN SPORTS 2 SD"
+      ]
     },
     {
       "output_id": "beinsports2.qa",
@@ -246,7 +268,12 @@
       "output_id": "beinsports3.fr",
       "source": "FR1",
       "source_id": "beIN.SPORTS.3.fr",
-      "name": "FR - BEIN SPORTS 3 FHD"
+      "name": "FR - BEIN SPORTS 3 FHD",
+      "display_names": [
+        "FR - BEIN SPORTS 3 FHD",
+        "FR - BEIN SPORTS 3 HEVC",
+        "FR - BEIN SPORTS 3 SD"
+      ]
     },
     {
       "output_id": "beinsports3.qa",
@@ -498,7 +525,10 @@
       "output_id": "Carthage+.fr",
       "source": "FR1",
       "source_id": "Carthage+.fr",
-      "name": "Carthage+ Tunisie — correspondance à vérifier avant attribution"
+      "name": "Carthage+ Tunisie — correspondance à vérifier avant attribution",
+      "display_names": [
+        "TN - CARTHAGE+ HD"
+      ]
     },
     {
       "output_id": "CARTOON.NETWORK.be",
@@ -1452,31 +1482,52 @@
       "output_id": "rotanacinema.eg",
       "source": "AE1",
       "source_id": "Rotana.Cinema.Egypt.ae",
-      "name": "Rotana Cinema Egypte (AR - ROTANA CINEMA FHD)"
+      "name": "Rotana Cinema Egypte (AR - ROTANA CINEMA FHD)",
+      "display_names": [
+        "AR - ROTANA CINEMA FHD ◉",
+        "AR - ROTANA CINEMA FHD²",
+        "JAWY-HD - ROTANA CINEMA MASR HD"
+      ]
     },
     {
       "output_id": "rotanacinema.sa",
       "source": "AE1",
       "source_id": "Rotana.Cinema.KSA.ae",
-      "name": "Rotana Cinema Arabie Saoudite (JAWY-HD - ROTANA CINEMA HD)"
+      "name": "Rotana Cinema Arabie Saoudite (JAWY-HD - ROTANA CINEMA HD)",
+      "display_names": [
+        "JAWY-HD - ROTANA CINEMA HD"
+      ]
     },
     {
       "output_id": "rotanaclassic.eg",
       "source": "AE1",
       "source_id": "Rotana.Classic.ae",
-      "name": "AR - ROTANA CLASSIC FHD ◉"
+      "name": "AR - ROTANA CLASSIC FHD ◉",
+      "display_names": [
+        "AR - ROTANA CLASSIC FHD ◉"
+      ]
     },
     {
       "output_id": "rotanadrama.eg",
       "source": "AE1",
       "source_id": "Rotana.Drama.ae",
-      "name": "AR - ROTANA DRAMA  FHD ◉"
+      "name": "AR - ROTANA DRAMA  FHD ◉",
+      "display_names": [
+        "AR - ROTANA DRAMA  FHD ◉",
+        "AR - ROTANA DRAMA FHD ²",
+        "MYHD - ROTANA DRAMA FHD",
+        "MYHD - ROTANA  DRAMA HD",
+        "JAWY-HD - ROTANA DRAMA HD"
+      ]
     },
     {
       "output_id": "rotanakhalijiah.eg",
       "source": "AE1",
       "source_id": "Rotana.Khalijia.ae",
-      "name": "AR - ROTANA KHALIJIA  FHD"
+      "name": "AR - ROTANA KHALIJIA  FHD",
+      "display_names": [
+        "AR - ROTANA KHALIJIA  FHD"
+      ]
     },
     {
       "output_id": "rotanamusic.eg",
@@ -1907,7 +1958,13 @@
       "output_id": "Tunisia.1.fr",
       "source": "FR1",
       "source_id": "Tunisia.1.fr",
-      "name": "Tunisia 1 (Watania 1) — correspondance à attribuer manuellement"
+      "name": "Tunisia 1 (Watania 1) — correspondance à attribuer manuellement",
+      "display_names": [
+        "TN - TUNISIA NATIONAL 1 FHD",
+        "TN - TUNISIA NATIONAL 1 ◉  HD",
+        "TN - TUNISIA NATIONAL 1 SD",
+        "TN - TUNISIE TELEVSION 1 HD"
+      ]
     },
     {
       "output_id": "TV.MONACO.fr",
@@ -2002,7 +2059,12 @@
       "output_id": "Watania.2.fr",
       "source": "FR1",
       "source_id": "Watania.2.fr",
-      "name": "Watania 2 — correspondance à attribuer manuellement"
+      "name": "Watania 2 — correspondance à attribuer manuellement",
+      "display_names": [
+        "TN - TUNISIA NATIONAL 2 FHD",
+        "TN - TUNISIA NATIONAL 2 ◉  HD",
+        "TN - TUNISIA NATIONAL 2 SD"
+      ]
     },
     {
       "output_id": "Yalla.Mosar3a.ae",
@@ -2352,5 +2414,6 @@
       "name": "Al Resalah"
     }
   ],
-  "official_rotana_warning": "Rotana Cinema Egypt and Saudi Arabia are independent schedules. If an Xtream stream labels the Egyptian EPG ID for a Saudi broadcast, an app-side association remains necessary. Sources failing current-date validation use existing XMLTV as fallback."
+  "official_rotana_warning": "Rotana Cinema Egypt and Saudi Arabia are independent schedules. If an Xtream stream labels the Egyptian EPG ID for a Saudi broadcast, an app-side association remains necessary. Sources failing current-date validation use existing XMLTV as fallback.",
+  "display_name_matching_note": "Supplemental exact names may help players using channel-name EPG matching. Xtream EPG identifiers in GoldenOTT cannot be changed by XMLTV and take precedence where present; same shared Xtream ID remains ambiguous. Never use these synonyms as proof of stream schedule."
 }
