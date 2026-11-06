@@ -165,11 +165,12 @@ def main():
         key=alias.get("source","")
         if not oid or not sid or key not in cfg["sources"]:continue
         if oid not in targets[key][sid]:targets[key][sid].append(oid)
-        name=alias.get("name","")
-        if name and name not in display[oid]:display[oid].append(name)
+        # Prefer the exact IPTV channel names for visible EPG search.
         for exact_name in alias.get("display_names",[]):
             if isinstance(exact_name,str) and exact_name.strip() and exact_name.strip() not in display[oid]:
                 display[oid].append(exact_name.strip())
+        name=alias.get("name","")
+        if name and name not in display[oid]:display[oid].append(name)
     for source in cfg.get("official_national",[]) + cfg.get("official_canal",[]) + cfg.get("official_rotana",[]):
         oid=source.get("output_id","")
         name=source.get("name","")
@@ -302,6 +303,7 @@ def main():
       "sources_downloaded":successful,
       "sources_failed":failed,
       "target_aliases":len(cfg.get("aliases",[])),
+      "epg_diagnostics":{oid:counts.get(oid,0) for oid in ("Al.Masriya.fr","rotanacinema.eg","rotanacinema.sa","Tunisia.1.fr","Watania.2.fr")},
       "official_bein_channels":len(official_done-national_done-canal_done-rotana_done),
       "official_rotana_channels":len(rotana_done),
       "official_rotana_programmes":rotana_count,
