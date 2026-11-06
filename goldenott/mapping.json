@@ -1451,8 +1451,14 @@
     {
       "output_id": "rotanacinema.eg",
       "source": "AE1",
+      "source_id": "Rotana.Cinema.Egypt.ae",
+      "name": "Rotana Cinema Egypte (AR - ROTANA CINEMA FHD)"
+    },
+    {
+      "output_id": "rotanacinema.sa",
+      "source": "AE1",
       "source_id": "Rotana.Cinema.KSA.ae",
-      "name": "AR - ROTANA CINEMA KSA FHD"
+      "name": "Rotana Cinema Arabie Saoudite (JAWY-HD - ROTANA CINEMA HD)"
     },
     {
       "output_id": "rotanaclassic.eg",
@@ -2032,5 +2038,6 @@
   "caution": "Guide with programmes from public EPG sources only; no live broadcast confirmation; empty or unmatched channels remain empty.",
   "coverage_note": "Identifiants nouveaux proposés dans le rapport GoldenOTT daté, sans preuve de correspondance aux flux en direct. Les chaînes sans epg_channel_id dans Xtream exigent une attribution.",
   "manual_assignment_warning": "Les 4 IDs supplémentaires Tunisia.1.fr, Watania.2.fr, Al.Masriya.fr et Carthage+.fr ne sont PAS des identifiants Xtream existants garantis; une attribution par chaîne peut être nécessaire. Ne jamais mapper automatiquement watania1.tn: cet identifiant est utilisé aussi pour El Hiwar Ettounsi et Attessia dans le catalogue Xtream.",
-  "source_integrity_note": "L'EPG n'atteste pas l'exactitude du flux vidéo; privilégier les identifiants identiques et rejeter les noms ambigus."
+  "source_integrity_note": "L'EPG n'atteste pas l'exactitude du flux vidéo; privilégier les identifiants identiques et rejeter les noms ambigus.",
+  "rotana_note": "Les versions Rotana Cinema Egypte et KSA ont des grilles distinctes. Attention: l'export Xtream attribue également rotanacinema.eg à AR - ROTANA CINEMA KSA FHD; cette chaîne mal identifiée nécessite une correction dans GoldenOTT ou chez le fournisseur pour afficher une grille réellement adaptée."
 }
