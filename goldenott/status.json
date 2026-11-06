@@ -1,7 +1,7 @@
 {
-  "updated_utc": "2026-11-06T20:57:16.330191+00:00",
+  "updated_utc": "2026-11-06T21:00:18.697078+00:00",
   "channels_with_programmes": 374,
-  "programmes": 35523,
+  "programmes": 35418,
   "sources_downloaded": [
     "FR1",
     "AE1",
@@ -13,13 +13,22 @@
   "sources_failed": [],
   "target_aliases": 360,
   "official_bein_channels": 21,
+  "official_canal_channels": 0,
+  "official_canal_programmes": 0,
+  "official_canal_attempted": 4,
+  "official_canal_failures": {
+    "canalplussport360.fr": "HTTP Error 403: Forbidden",
+    "canalplusboxoffice.fr": "HTTP Error 403: Forbidden",
+    "canalplussport.fr": "HTTP Error 403: Forbidden",
+    "canalplusfoot.fr": "HTTP Error 403: Forbidden"
+  },
   "official_national_channels": 19,
-  "official_national_programmes": 1288,
+  "official_national_programmes": 1283,
   "official_national_attempted": 20,
   "official_national_failures": {
     "raiscuola.it": "HTTP Error 404: Not Found"
   },
-  "official_bein_programmes": 716,
+  "official_bein_programmes": 713,
   "official_bein_attempted": 21,
   "official_bein_failures": {},
   "warning": "Guide scheduling is not a guarantee of live IPTV broadcast. Unmapped Xtream channels need separate associations."
