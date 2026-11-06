@@ -1,7 +1,7 @@
 {
-  "updated_utc": "2026-11-06T20:44:47.896346+00:00",
+  "updated_utc": "2026-11-06T20:46:11.844152+00:00",
   "channels_with_programmes": 360,
-  "programmes": 35438,
+  "programmes": 35091,
   "sources_downloaded": [
     "FR1",
     "AE1",
@@ -12,5 +12,9 @@
   ],
   "sources_failed": [],
   "target_aliases": 360,
+  "official_bein_channels": 21,
+  "official_bein_programmes": 717,
+  "official_bein_attempted": 21,
+  "official_bein_failures": {},
   "warning": "Guide scheduling is not a guarantee of live IPTV broadcast. Unmapped Xtream channels need separate associations."
 }
