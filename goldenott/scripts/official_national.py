@@ -101,7 +101,17 @@ def rai_schedule(oid,site_id,now):
         for row in events:
             if not isinstance(row,dict):continue
             try:
-                minutes=int(row.get("duration_in_minutes",0))
+                raw_minutes=str(row.get("duration_in_minutes","")).strip()
+                m=re.fullmatch(r"(\\d+)\\s*(?:min)?",raw_minutes,re.IGNORECASE)
+                if m:
+                    minutes=int(m.group(1))
+                else:
+                    # RaiPlay may alternatively publish HH:MM:SS.
+                    raw_hms=str(row.get("duration","")).strip()
+                    hms=re.fullmatch(r"(\\d{1,2}):(\\d{2}):(\\d{2})",raw_hms)
+                    if not hms:continue
+                    hours,mins,secs=map(int,hms.groups())
+                    minutes=hours*60+mins+(1 if secs>=30 else 0)
                 if minutes<=0 or minutes>960:continue
                 start=local_time(day,row.get("hour",""),ROME)
                 p=valid_entry(oid,start,start+dt.timedelta(minutes=minutes),row.get("name",""),now,row.get("description",""))
