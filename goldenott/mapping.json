@@ -2291,5 +2291,28 @@
       "name": "RTS Deux"
     }
   ],
-  "official_national_policy": "Official France TV, RaiPlay and RTS schedules are used only when their public API returns valid current timings. Existing XMLTV stays as fallback for failures. Country-specific, timeshift and region-specific versions excluded."
+  "official_national_policy": "Official France TV, RaiPlay and RTS schedules are used only when their public API returns valid current timings. Existing XMLTV stays as fallback for failures. Country-specific, timeshift and region-specific versions excluded.",
+  "official_canal": [
+    {
+      "output_id": "canalplussport.fr",
+      "site_id": "574",
+      "name": "CANAL+ Sport France"
+    },
+    {
+      "output_id": "canalplusfoot.fr",
+      "site_id": "1045",
+      "name": "CANAL+ Foot France"
+    },
+    {
+      "output_id": "canalplussport360.fr",
+      "site_id": "1048",
+      "name": "CANAL+ Sport 360 France"
+    },
+    {
+      "output_id": "canalplusboxoffice.fr",
+      "site_id": "1074",
+      "name": "CANAL+ Box Office France"
+    }
+  ],
+  "official_canal_policy": "Use CANAL+ public schedules only for unambiguous channel IDs. Main CANAL+ and regional/4K variants are excluded as ambiguous. Existing XMLTV is fallback when available."
 }
