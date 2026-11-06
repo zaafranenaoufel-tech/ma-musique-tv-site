@@ -1,0 +1,16 @@
+{
+  "updated_utc": "2026-11-06T18:15:32.950812+00:00",
+  "channels_with_programmes": 212,
+  "programmes": 21003,
+  "sources_downloaded": [
+    "FR1",
+    "AE1",
+    "BEIN1",
+    "IT1",
+    "CH1",
+    "BE2"
+  ],
+  "sources_failed": [],
+  "target_aliases": 212,
+  "warning": "Guide scheduling is not a guarantee of live IPTV broadcast. Unmapped Xtream channels need separate associations."
+}
