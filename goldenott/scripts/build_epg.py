@@ -19,6 +19,7 @@ from collections import defaultdict
 from pathlib import Path
 from official_national import fetch_national_channel
 from official_canal import fetch_official_canal
+from official_rotana import fetch_official_rotana
 
 ROOT=Path(__file__).resolve().parents[1]
 MAP=ROOT/"mapping.json"
@@ -166,7 +167,7 @@ def main():
         if oid not in targets[key][sid]:targets[key][sid].append(oid)
         name=alias.get("name","")
         if name and name not in display[oid]:display[oid].append(name)
-    for source in cfg.get("official_national",[]) + cfg.get("official_canal",[]):
+    for source in cfg.get("official_national",[]) + cfg.get("official_canal",[]) + cfg.get("official_rotana",[]):
         oid=source.get("output_id","")
         name=source.get("name","")
         if oid and name and name not in display[oid]:display[oid].append(name)
@@ -224,7 +225,30 @@ def main():
                             output.write(ET.tostring(entry,encoding="utf-8")+b"\n")
                             counts[oid]+=1
                             canal_count+=1
+
             official_done.update(canal_done)
+            rotana_done=set()
+            rotana_errors={}
+            rotana_count=0
+            rotana_targets=cfg.get("official_rotana",[])
+            if rotana_targets:
+                with ThreadPoolExecutor(max_workers=3) as pool:
+                    futures=[pool.submit(fetch_official_rotana,a,now) for a in rotana_targets]
+                    for future in as_completed(futures):
+                        try:
+                            oid,entries,error=future.result()
+                        except Exception as exc:
+                            print("OFFICIAL ROTANA ERROR:",str(exc)[:180],flush=True)
+                            continue
+                        if error:
+                            rotana_errors[oid]=error
+                            continue
+                        rotana_done.add(oid)
+                        for entry in entries:
+                            output.write(ET.tostring(entry,encoding="utf-8")+b"\n")
+                            counts[oid]+=1
+                            rotana_count+=1
+            official_done.update(rotana_done)
             official_targets=cfg.get("official_bein",[])
             if official_targets:
                 with ThreadPoolExecutor(max_workers=4) as pool:
@@ -275,7 +299,11 @@ def main():
       "sources_downloaded":successful,
       "sources_failed":failed,
       "target_aliases":len(cfg.get("aliases",[])),
-      "official_bein_channels":len(official_done-national_done-canal_done),
+      "official_bein_channels":len(official_done-national_done-canal_done-rotana_done),
+      "official_rotana_channels":len(rotana_done),
+      "official_rotana_programmes":rotana_count,
+      "official_rotana_attempted":len(cfg.get("official_rotana",[])),
+      "official_rotana_failures":rotana_errors,
       "official_canal_channels":len(canal_done),
       "official_canal_programmes":canal_count,
       "official_canal_attempted":len(cfg.get("official_canal",[])),
