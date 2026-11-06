@@ -2314,5 +2314,43 @@
       "name": "CANAL+ Box Office France"
     }
   ],
-  "official_canal_policy": "Use CANAL+ public schedules only for unambiguous channel IDs. Main CANAL+ and regional/4K variants are excluded as ambiguous. Existing XMLTV is fallback when available."
+  "official_canal_policy": "Use CANAL+ public schedules only for unambiguous channel IDs. Main CANAL+ and regional/4K variants are excluded as ambiguous. Existing XMLTV is fallback when available.",
+  "official_rotana": [
+    {
+      "output_id": "rotanacinema.eg",
+      "site_id": "439",
+      "name": "Rotana Cinema Egypt"
+    },
+    {
+      "output_id": "rotanacinema.sa",
+      "site_id": "431",
+      "name": "Rotana Cinema Saudi Arabia"
+    },
+    {
+      "output_id": "rotanaclassic.eg",
+      "site_id": "438",
+      "name": "Rotana Classic"
+    },
+    {
+      "output_id": "rotanadrama.eg",
+      "site_id": "436",
+      "name": "Rotana Drama"
+    },
+    {
+      "output_id": "rotanakhalijiah.eg",
+      "site_id": "435",
+      "name": "Rotana Khalijia"
+    },
+    {
+      "output_id": "Rotana.Clip.ae",
+      "site_id": "443",
+      "name": "Rotana Clip"
+    },
+    {
+      "output_id": "Al.Resala.ae",
+      "site_id": "446",
+      "name": "Al Resalah"
+    }
+  ],
+  "official_rotana_warning": "Rotana Cinema Egypt and Saudi Arabia are independent schedules. If an Xtream stream labels the Egyptian EPG ID for a Saudi broadcast, an app-side association remains necessary. Sources failing current-date validation use existing XMLTV as fallback."
 }
