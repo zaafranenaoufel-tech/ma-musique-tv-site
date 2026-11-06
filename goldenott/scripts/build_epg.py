@@ -12,6 +12,8 @@ import re
 import shutil
 import tempfile
 import urllib.request
+import urllib.parse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 from pathlib import Path
@@ -48,7 +50,8 @@ def download(url,path,limit=100_000_000):
             out.write(b)
     if size<100:raise ValueError("Source is empty")
 
-def process(path,wanted,now,fragment):
+def process(path,wanted,now,fragment,exclude=None):
+    exclude=exclude or set()
     with open(path,"rb") as f: gz=f.read(2)==b"\x1f\x8b"
     source=gzip.open(path,"rb") if gz else open(path,"rb")
     counters=defaultdict(int)
@@ -73,6 +76,7 @@ def process(path,wanted,now,fragment):
                     if start and stop and start<stop and stop>lower and start<upper:
                         if (element.findtext("title") or "").strip():
                             for oid in wanted[sid]:
+                                if oid in exclude:continue
                                 dup=(oid,element.get("start"),element.get("stop"),element.findtext("title"))
                                 if dup in seen:continue
                                 seen.add(dup)
@@ -84,6 +88,69 @@ def process(path,wanted,now,fragment):
                 element.clear()
                 if root is not None and root is not element:root.clear()
     return counters,names
+
+
+def parse_official_time(value):
+    if not isinstance(value,str):return None
+    try:
+        val=dt.datetime.fromisoformat(value.replace("Z","+00:00"))
+        if val.tzinfo is None:val=val.replace(tzinfo=UTC)
+        return val.astimezone(UTC)
+    except (ValueError,OverflowError):return None
+
+def parse_official_rows(data,output_id,now):
+    """BeIN published TV-event rows; only dated entries are accepted."""
+    if not isinstance(data,dict) or not isinstance(data.get("rows"),list):return []
+    result=[]
+    seen=set()
+    lower,upper=now-dt.timedelta(hours=6),now+dt.timedelta(days=3)
+    for item in data["rows"]:
+        if not isinstance(item,dict):continue
+        start=parse_official_time(item.get("startDate"))
+        stop=parse_official_time(item.get("endDate"))
+        title=item.get("title")
+        if not isinstance(title,str) or not title.strip():continue
+        if not start or not stop or not (start<stop and stop>lower and start<upper):continue
+        if stop-start>dt.timedelta(days=2):continue
+        key=(start,stop,title)
+        if key in seen:continue
+        seen.add(key)
+        p=ET.Element("programme",{
+            "channel":output_id,
+            "start":start.strftime("%Y%m%d%H%M%S +0000"),
+            "stop":stop.strftime("%Y%m%d%H%M%S +0000")
+        })
+        ET.SubElement(p,"title").text=title.strip()
+        desc=item.get("description")
+        if isinstance(desc,str) and desc.strip():
+            ET.SubElement(p,"desc").text=desc.strip()[:5000]
+        result.append(p)
+    return result
+
+def fetch_official_bein(alias,now):
+    """Use BeIN's public Opta TV schedule. Fail closed to existing XMLTV source."""
+    oid=alias["output_id"]
+    site_id=alias["site_id"]
+    fmt=lambda t:t.astimezone(UTC).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    params=urllib.parse.urlencode({
+        "startBefore":fmt(now+dt.timedelta(days=2)),
+        "endAfter":fmt(now-dt.timedelta(hours=6)),
+        "channelIds":site_id,
+    })
+    url="https://www.beinsports.com/api/opta/tv-event?"+params
+    req=urllib.request.Request(url,headers={
+        "User-Agent":"Mozilla/5.0 (compatible; GoldenOTT EPG schedule checker)",
+        "Accept":"application/json"
+    })
+    try:
+        with urllib.request.urlopen(req,timeout=14) as response:
+            raw=response.read(6_000_001)
+        if len(raw)>6_000_000:raise ValueError("official response too large")
+        programmes=parse_official_rows(json.loads(raw),oid,now)
+        if not programmes:raise ValueError("no valid current TV-event rows")
+        return oid,programmes,None
+    except Exception as exc:
+        return oid,[],str(exc)[:180]
 
 def main():
     cfg=json.loads(MAP.read_text(encoding="utf-8"))
@@ -104,13 +171,30 @@ def main():
     with tempfile.TemporaryDirectory(prefix="goldenott-epg-") as d:
         d=Path(d)
         fragment=d/"programmes.xml"
+        official_done=set()
+        official_errors={}
+        official_count=0
         with fragment.open("wb") as output:
+            official_targets=cfg.get("official_bein",[])
+            if official_targets:
+                with ThreadPoolExecutor(max_workers=4) as pool:
+                    futures=[pool.submit(fetch_official_bein,a,now) for a in official_targets]
+                    for future in as_completed(futures):
+                        oid,entries,error=future.result()
+                        if error:
+                            official_errors[oid]=error
+                            continue
+                        official_done.add(oid)
+                        for entry in entries:
+                            output.write(ET.tostring(entry,encoding="utf-8")+b"\n")
+                            counts[oid]+=1
+                            official_count+=1
             for key,guide in cfg["sources"].items():
                 if key not in targets:continue
                 try:
                     local=d/(key+".xml.gz")
                     download(guide,local)
-                    found,names=process(local,targets[key],now,output)
+                    found,names=process(local,targets[key],now,output,exclude=official_done)
                     successful.append(key)
                     for oid,count in found.items():counts[oid]+=count
                     for sid,source_names in names.items():
@@ -141,6 +225,10 @@ def main():
       "sources_downloaded":successful,
       "sources_failed":failed,
       "target_aliases":len(cfg.get("aliases",[])),
+      "official_bein_channels":len(official_done),
+      "official_bein_programmes":official_count,
+      "official_bein_attempted":len(cfg.get("official_bein",[])),
+      "official_bein_failures":official_errors,
       "warning":"Guide scheduling is not a guarantee of live IPTV broadcast. Unmapped Xtream channels need separate associations."
     }
     STATUS.write_text(json.dumps(status,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
