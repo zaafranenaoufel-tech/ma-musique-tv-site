@@ -2168,5 +2168,128 @@
       "name": "beIN SPORTS 2 MENA"
     }
   ],
-  "official_bein_policy": "Use beinsports.com public EPG first when valid and current; if unavailable preserve existing XMLTV guide. Site metadata is not proof the IPTV stream matches its claimed channel."
+  "official_bein_policy": "Use beinsports.com public EPG first when valid and current; if unavailable preserve existing XMLTV guide. Site metadata is not proof the IPTV stream matches its claimed channel.",
+  "official_national": [
+    {
+      "output_id": "france2.fr",
+      "provider": "france.tv",
+      "site_id": "france-2",
+      "name": "France 2"
+    },
+    {
+      "output_id": "france3.fr",
+      "provider": "france.tv",
+      "site_id": "france-3",
+      "name": "France 3 (national)"
+    },
+    {
+      "output_id": "france4.fr",
+      "provider": "france.tv",
+      "site_id": "france-4",
+      "name": "France 4"
+    },
+    {
+      "output_id": "france5.fr",
+      "provider": "france.tv",
+      "site_id": "france-5",
+      "name": "France 5"
+    },
+    {
+      "output_id": "franceinfo.fr",
+      "provider": "france.tv",
+      "site_id": "franceinfo",
+      "name": "Franceinfo TV"
+    },
+    {
+      "output_id": "rai1.it",
+      "provider": "raiplay.it",
+      "site_id": "rai-1",
+      "name": "Rai 1"
+    },
+    {
+      "output_id": "rai2.it",
+      "provider": "raiplay.it",
+      "site_id": "rai-2",
+      "name": "Rai 2"
+    },
+    {
+      "output_id": "rai3.it",
+      "provider": "raiplay.it",
+      "site_id": "rai-3",
+      "name": "Rai 3"
+    },
+    {
+      "output_id": "rai4.it",
+      "provider": "raiplay.it",
+      "site_id": "rai-4",
+      "name": "Rai 4"
+    },
+    {
+      "output_id": "rai5.it",
+      "provider": "raiplay.it",
+      "site_id": "rai-5",
+      "name": "Rai 5"
+    },
+    {
+      "output_id": "raigulp.it",
+      "provider": "raiplay.it",
+      "site_id": "rai-gulp",
+      "name": "Rai Gulp"
+    },
+    {
+      "output_id": "raimovie.it",
+      "provider": "raiplay.it",
+      "site_id": "rai-movie",
+      "name": "Rai Movie"
+    },
+    {
+      "output_id": "rainews24.it",
+      "provider": "raiplay.it",
+      "site_id": "rai-news-24",
+      "name": "Rai News 24"
+    },
+    {
+      "output_id": "raipremium.it",
+      "provider": "raiplay.it",
+      "site_id": "rai-premium",
+      "name": "Rai Premium"
+    },
+    {
+      "output_id": "raiscuola.it",
+      "provider": "raiplay.it",
+      "site_id": "rai-scuola",
+      "name": "Rai Scuola"
+    },
+    {
+      "output_id": "raisport.it",
+      "provider": "raiplay.it",
+      "site_id": "rai-sport",
+      "name": "Rai Sport"
+    },
+    {
+      "output_id": "raistoria.it",
+      "provider": "raiplay.it",
+      "site_id": "rai-storia",
+      "name": "Rai Storia"
+    },
+    {
+      "output_id": "raiyoyo.it",
+      "provider": "raiplay.it",
+      "site_id": "rai-yoyo",
+      "name": "Rai Yoyo"
+    },
+    {
+      "output_id": "rts1.ch",
+      "provider": "rts.ch",
+      "site_id": "143932a79bb5a123a646b68b1d1188d7ae493e5b",
+      "name": "RTS Un"
+    },
+    {
+      "output_id": "rts2.ch",
+      "provider": "rts.ch",
+      "site_id": "d7dfff28deee44e1d3c49a3d37d36d492b29671b",
+      "name": "RTS Deux"
+    }
+  ],
+  "official_national_policy": "Official France TV, RaiPlay and RTS schedules are used only when their public API returns valid current timings. Existing XMLTV stays as fallback for failures. Country-specific, timeshift and region-specific versions excluded."
 }
