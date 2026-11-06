@@ -1,7 +1,7 @@
 {
-  "updated_utc": "2026-11-06T21:11:25.678152+00:00",
+  "updated_utc": "2026-11-06T22:12:42.828871+00:00",
   "channels_with_programmes": 374,
-  "programmes": 35336,
+  "programmes": 34756,
   "sources_downloaded": [
     "FR1",
     "AE1",
@@ -14,7 +14,7 @@
   "target_aliases": 360,
   "official_bein_channels": 21,
   "official_rotana_channels": 5,
-  "official_rotana_programmes": 272,
+  "official_rotana_programmes": 268,
   "official_rotana_attempted": 7,
   "official_rotana_failures": {
     "Rotana.Clip.ae": "No current programme schedule published",
@@ -24,18 +24,18 @@
   "official_canal_programmes": 0,
   "official_canal_attempted": 4,
   "official_canal_failures": {
-    "canalplussport360.fr": "HTTP Error 403: Forbidden",
-    "canalplussport.fr": "HTTP Error 403: Forbidden",
     "canalplusfoot.fr": "HTTP Error 403: Forbidden",
-    "canalplusboxoffice.fr": "HTTP Error 403: Forbidden"
+    "canalplussport.fr": "HTTP Error 403: Forbidden",
+    "canalplusboxoffice.fr": "HTTP Error 403: Forbidden",
+    "canalplussport360.fr": "HTTP Error 403: Forbidden"
   },
   "official_national_channels": 19,
-  "official_national_programmes": 1276,
+  "official_national_programmes": 1238,
   "official_national_attempted": 20,
   "official_national_failures": {
     "raiscuola.it": "HTTP Error 404: Not Found"
   },
-  "official_bein_programmes": 712,
+  "official_bein_programmes": 705,
   "official_bein_attempted": 21,
   "official_bein_failures": {},
   "warning": "Guide scheduling is not a guarantee of live IPTV broadcast. Unmapped Xtream channels need separate associations."
