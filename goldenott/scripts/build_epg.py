@@ -167,6 +167,9 @@ def main():
         if oid not in targets[key][sid]:targets[key][sid].append(oid)
         name=alias.get("name","")
         if name and name not in display[oid]:display[oid].append(name)
+        for exact_name in alias.get("display_names",[]):
+            if isinstance(exact_name,str) and exact_name.strip() and exact_name.strip() not in display[oid]:
+                display[oid].append(exact_name.strip())
     for source in cfg.get("official_national",[]) + cfg.get("official_canal",[]) + cfg.get("official_rotana",[]):
         oid=source.get("output_id","")
         name=source.get("name","")
