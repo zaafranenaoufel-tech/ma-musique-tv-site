@@ -1,0 +1,1294 @@
+{
+  "report_channels": 4848,
+  "sources": {
+    "FR1": "https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz",
+    "AE1": "https://epgshare01.online/epgshare01/epg_ripper_AE1.xml.gz",
+    "BEIN1": "https://epgshare01.online/epgshare01/epg_ripper_BEIN1.xml.gz",
+    "IT1": "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz",
+    "CH1": "https://epgshare01.online/epgshare01/epg_ripper_CH1.xml.gz",
+    "BE2": "https://epgshare01.online/epgshare01/epg_ripper_BE2.xml.gz"
+  },
+  "aliases": [
+    {
+      "output_id": "4plus.ch",
+      "source": "CH1",
+      "source_id": "4+.ch",
+      "name": "CH - 4+ HD"
+    },
+    {
+      "output_id": "5plus.ch",
+      "source": "CH1",
+      "source_id": "5+.ch",
+      "name": "CH - 5+ HD"
+    },
+    {
+      "output_id": "6plus.ch",
+      "source": "CH1",
+      "source_id": "6+.ch",
+      "name": "CH - 6+ HD"
+    },
+    {
+      "output_id": "6ter.fr",
+      "source": "FR1",
+      "source_id": "6ter.fr",
+      "name": "FR - 6TER FHD"
+    },
+    {
+      "output_id": "AlHayat.eg",
+      "source": "AE1",
+      "source_id": "Al.Hayat.ae",
+      "name": "EG - AL HAYAT HD ◉"
+    },
+    {
+      "output_id": "AlJazeera.qa",
+      "source": "AE1",
+      "source_id": "Al.Jazeera.HD.ae",
+      "name": "AR - AL JAZEERA HD"
+    },
+    {
+      "output_id": "BBCArabic.sa",
+      "source": "AE1",
+      "source_id": "BBC.Arabic.ae",
+      "name": "AR - BBC ARABIC HD"
+    },
+    {
+      "output_id": "CBC.eg",
+      "source": "AE1",
+      "source_id": "CBC.ae",
+      "name": "EG - CBC  HD◉"
+    },
+    {
+      "output_id": "CBCSofra.eg",
+      "source": "AE1",
+      "source_id": "CBC.Sofra.ae",
+      "name": "EG - CBC SOFRA  HD◉"
+    },
+    {
+      "output_id": "CrimeDistrict.fr",
+      "source": "FR1",
+      "source_id": "Crime.District.fr",
+      "name": "FR - CRIME DISTRICT FHD"
+    },
+    {
+      "output_id": "DMCDrama.eg",
+      "source": "AE1",
+      "source_id": "DMC.Drama.ae",
+      "name": "EG - DMC DRAMA  HD◉"
+    },
+    {
+      "output_id": "MbcMasr.eg",
+      "source": "AE1",
+      "source_id": "MBC.Masr.HD.ae",
+      "name": "MYHD - MBC MASR FHD ◉"
+    },
+    {
+      "output_id": "MbcMasr2.eg",
+      "source": "AE1",
+      "source_id": "MBC.Masr.2.HD.ae",
+      "name": "MYHD - MBC MASR 2 FHD ◉"
+    },
+    {
+      "output_id": "NileDrama.eg",
+      "source": "AE1",
+      "source_id": "Nile.Drama.ae",
+      "name": "EG - NILE DRAMA HD"
+    },
+    {
+      "output_id": "NileLife.eg",
+      "source": "AE1",
+      "source_id": "Nile.Life.ae",
+      "name": "EG - NILE LIFE HD"
+    },
+    {
+      "output_id": "NileSport.eg",
+      "source": "AE1",
+      "source_id": "Nile.Sport.ae",
+      "name": "EG - NILE SPORT HD"
+    },
+    {
+      "output_id": "PanoramaDrama2.eg",
+      "source": "AE1",
+      "source_id": "Panorama.Drama.2.ae",
+      "name": "EG - PANORAMA DRAMA 2 HD"
+    },
+    {
+      "output_id": "RTArab.ru",
+      "source": "AE1",
+      "source_id": "RT.Arabic.HD.ae",
+      "name": "AR - RT ARABIC HD"
+    },
+    {
+      "output_id": "ab1.fr",
+      "source": "FR1",
+      "source_id": "AB1.fr",
+      "name": "FR - AB1 FHD ◉"
+    },
+    {
+      "output_id": "ab3.be",
+      "source": "BE2",
+      "source_id": "AB3.be",
+      "name": "BE - AB3 HD"
+    },
+    {
+      "output_id": "action.fr",
+      "source": "FR1",
+      "source_id": "Action.fr",
+      "name": "FR - ACTION FHD"
+    },
+    {
+      "output_id": "adsports1.ae",
+      "source": "AE1",
+      "source_id": "AD.Sports.1.HD.ae",
+      "name": "AR - AD SPORTS 1 FHD"
+    },
+    {
+      "output_id": "adsports2.ae",
+      "source": "AE1",
+      "source_id": "AD.Sports.2.HD.ae",
+      "name": "AR - AD SPORTS 2 FHD"
+    },
+    {
+      "output_id": "aljazeeradocumentary.qa",
+      "source": "AE1",
+      "source_id": "Al.Jazeera.Documentary.HD.ae",
+      "name": "AR - AL JAZEERA DOCUMENTARY HD"
+    },
+    {
+      "output_id": "aljazeeraenglish.qa",
+      "source": "AE1",
+      "source_id": "Al.Jazeera.English.HD.ae",
+      "name": "AR - AL JAZEERA ENGLISH HD"
+    },
+    {
+      "output_id": "alnahardrama.eg",
+      "source": "AE1",
+      "source_id": "Al.Nahar.Drama.ae",
+      "name": "EG - AL NAHAR DRAMA HD ◉"
+    },
+    {
+      "output_id": "animaux.fr",
+      "source": "FR1",
+      "source_id": "Animaux.fr",
+      "name": "FR - ANIMAUX FHD"
+    },
+    {
+      "output_id": "arte.fr",
+      "source": "FR1",
+      "source_id": "Arte.fr",
+      "name": "FR - ARTE FHD"
+    },
+    {
+      "output_id": "becine.be",
+      "source": "BE2",
+      "source_id": "BE.CINE.be",
+      "name": "BE - BE CINE FHD"
+    },
+    {
+      "output_id": "beinsports1.fr",
+      "source": "FR1",
+      "source_id": "beIN.SPORTS.1.fr",
+      "name": "FR - BEIN SPORTS 1 FHD"
+    },
+    {
+      "output_id": "beinsports1.qa",
+      "source": "BEIN1",
+      "source_id": "beIN_SPORTS1_DIGITAL_Mono_AR.bein",
+      "name": "AR - BEIN SPORTS 1 4K"
+    },
+    {
+      "output_id": "beinsports2.fr",
+      "source": "FR1",
+      "source_id": "beIN.SPORTS.2.fr",
+      "name": "FR - BEIN SPORTS 2 FHD"
+    },
+    {
+      "output_id": "beinsports2.qa",
+      "source": "BEIN1",
+      "source_id": "beIN_SPORTS2_DIGITAL_Mono_AR.bein",
+      "name": "AR - BEIN SPORTS 2 4K"
+    },
+    {
+      "output_id": "beinsports3.fr",
+      "source": "FR1",
+      "source_id": "beIN.SPORTS.3.fr",
+      "name": "FR - BEIN SPORTS 3 FHD"
+    },
+    {
+      "output_id": "beinsports3.qa",
+      "source": "BEIN1",
+      "source_id": "beIN_SPORTS3_DIGITAL_Mono_AR.bein",
+      "name": "AR - BEIN SPORTS 3 4K"
+    },
+    {
+      "output_id": "beinsports4.qa",
+      "source": "BEIN1",
+      "source_id": "beIN_SPORTS4_DIGITAL_Mono_AR.bein",
+      "name": "AR - BEIN SPORTS 4 4K"
+    },
+    {
+      "output_id": "beinsports5.qa",
+      "source": "BEIN1",
+      "source_id": "beIN_SPORTS5_DIGITAL_Mono_AR.bein",
+      "name": "AR - BEIN SPORTS 5 4K"
+    },
+    {
+      "output_id": "beinsports6.qa",
+      "source": "BEIN1",
+      "source_id": "beIN_SPORTS6_DIGITAL_Mono-d-1_AR.bein",
+      "name": "AR - BEIN SPORTS 6 4K"
+    },
+    {
+      "output_id": "beinsports7.qa",
+      "source": "BEIN1",
+      "source_id": "beIN_SPORTS7_DIGITAL_Mono_AR.bein",
+      "name": "AR - BEIN SPORTS 7 4K"
+    },
+    {
+      "output_id": "beinsports8.qa",
+      "source": "BEIN1",
+      "source_id": "logos-_beINSPORTS8_AR.bein",
+      "name": "AR - BEIN SPORTS 8 4K"
+    },
+    {
+      "output_id": "beinsports9.qa",
+      "source": "BEIN1",
+      "source_id": "logos-_beINSPORTS9_AR.bein",
+      "name": "AR - BEIN SPORTS 9 4K"
+    },
+    {
+      "output_id": "beinsportsmax10.fr",
+      "source": "FR1",
+      "source_id": "beIN.SPORTS.MAX.10.fr",
+      "name": "FR - BEIN SPORTS MAX 10 FHD"
+    },
+    {
+      "output_id": "beinsportsmax4.fr",
+      "source": "FR1",
+      "source_id": "beIN.SPORTS.MAX.4.fr",
+      "name": "FR - BEIN SPORTS MAX 4 FHD"
+    },
+    {
+      "output_id": "beinsportsmax5.fr",
+      "source": "FR1",
+      "source_id": "beIN.SPORTS.MAX.5.fr",
+      "name": "FR - BEIN SPORTS MAX 5 FHD"
+    },
+    {
+      "output_id": "beinsportsmax6.fr",
+      "source": "FR1",
+      "source_id": "beIN.SPORTS.MAX.6.fr",
+      "name": "FR - BEIN SPORTS MAX 6 FHD"
+    },
+    {
+      "output_id": "beinsportsmax7.fr",
+      "source": "FR1",
+      "source_id": "beIN.SPORTS.MAX.7.fr",
+      "name": "FR - BEIN SPORTS MAX 7 FHD"
+    },
+    {
+      "output_id": "beinsportsmax8.fr",
+      "source": "FR1",
+      "source_id": "beIN.SPORTS.MAX.8.fr",
+      "name": "FR - BEIN SPORTS MAX 8 FHD"
+    },
+    {
+      "output_id": "beinsportsmax9.fr",
+      "source": "FR1",
+      "source_id": "beIN.SPORTS.MAX.9.fr",
+      "name": "FR - BEIN SPORTS MAX 9 FHD"
+    },
+    {
+      "output_id": "beinsportsnews.qa",
+      "source": "BEIN1",
+      "source_id": "NEWS_DIGITAL_Mono_AR.bein",
+      "name": "AR - BEIN SPORTS NEWS 4K"
+    },
+    {
+      "output_id": "beinsportsxtra2.qa",
+      "source": "BEIN1",
+      "source_id": "beIN_SPORTS_XTRA2_Digital_Mono_AR.bein",
+      "name": "AR - BEIN SPORTS XTRA 2 4K"
+    },
+    {
+      "output_id": "bfmbusiness.fr",
+      "source": "FR1",
+      "source_id": "BFM.Business.fr",
+      "name": "FR - BFM BUSINESS FHD"
+    },
+    {
+      "output_id": "bfmlyon.fr",
+      "source": "FR1",
+      "source_id": "BFM.Lyon.fr",
+      "name": "FR - BFM LYON FHD"
+    },
+    {
+      "output_id": "bfmtv.fr",
+      "source": "FR1",
+      "source_id": "BFM.TV.fr",
+      "name": "FR - BFM TV FHD ◉"
+    },
+    {
+      "output_id": "bluestars.ch",
+      "source": "CH1",
+      "source_id": "blue.Stars.ch",
+      "name": "CH - BLUE STARS HD"
+    },
+    {
+      "output_id": "boing.it",
+      "source": "IT1",
+      "source_id": "Boing.it",
+      "name": "IT - BOING HD"
+    },
+    {
+      "output_id": "boomerang.fr",
+      "source": "FR1",
+      "source_id": "Boomerang.fr",
+      "name": "FR - BOOMERANG FHD ◉"
+    },
+    {
+      "output_id": "boomerang.it",
+      "source": "IT1",
+      "source_id": "Boomerang.it",
+      "name": "IT - BOOMERANG SD"
+    },
+    {
+      "output_id": "canale5.it",
+      "source": "IT1",
+      "source_id": "Canale.5.it",
+      "name": "IT - CANALE 5 HD"
+    },
+    {
+      "output_id": "canalplus.fr",
+      "source": "FR1",
+      "source_id": "CANAL+.UHD.HDR.fr",
+      "name": "FR - CANAL+ 4K HDR"
+    },
+    {
+      "output_id": "canalplusdocs.fr",
+      "source": "FR1",
+      "source_id": "Canal+.DOCS.fr",
+      "name": "FR - CANAL+ DOCS FHD"
+    },
+    {
+      "output_id": "canalplusfoot.fr",
+      "source": "FR1",
+      "source_id": "Canal+.Foot.fr",
+      "name": "FR - CANAL+ FOOT FHD"
+    },
+    {
+      "output_id": "canalplusgrandecran.fr",
+      "source": "FR1",
+      "source_id": "Canal+.Grand.Ecran.fr",
+      "name": "FR - CANAL+ GRAND ECRAN FHD ◉"
+    },
+    {
+      "output_id": "canalpluskids.fr",
+      "source": "FR1",
+      "source_id": "Canal+.KIDS.fr",
+      "name": "FR - CANAL+ KIDS FHD"
+    },
+    {
+      "output_id": "canalplussport.fr",
+      "source": "FR1",
+      "source_id": "Canal+.Sport.fr",
+      "name": "FR - CANAL+ SPORT FHD ◉"
+    },
+    {
+      "output_id": "canvas.be",
+      "source": "BE2",
+      "source_id": "CANVAS.be",
+      "name": "BE - CANVAS HEVC"
+    },
+    {
+      "output_id": "cartoonito.it",
+      "source": "IT1",
+      "source_id": "Cartoonito.it",
+      "name": "IT - CARTOONITO FHD"
+    },
+    {
+      "output_id": "cartoonnetwork.fr",
+      "source": "FR1",
+      "source_id": "Cartoon.Network.fr",
+      "name": "FR - CARTOON NETWORK FHD"
+    },
+    {
+      "output_id": "cartoonnetwork.it",
+      "source": "IT1",
+      "source_id": "Cartoon.Network.it",
+      "name": "IT - CARTOON NETWORK HD"
+    },
+    {
+      "output_id": "cbcdrama.eg",
+      "source": "AE1",
+      "source_id": "CBC.Drama.ae",
+      "name": "EG - CBC DRAMA HD ◉"
+    },
+    {
+      "output_id": "chassepeche.fr",
+      "source": "FR1",
+      "source_id": "Chasse.&.Pêche.fr",
+      "name": "FR - CHASSE&PECHE FHD"
+    },
+    {
+      "output_id": "cielo.it",
+      "source": "IT1",
+      "source_id": "cielo.it",
+      "name": "IT - CIELO UHD"
+    },
+    {
+      "output_id": "cine34.it",
+      "source": "IT1",
+      "source_id": "Cine34.it",
+      "name": "IT - CINE34 FHD"
+    },
+    {
+      "output_id": "cineplusclassic.fr",
+      "source": "FR1",
+      "source_id": "Ciné+.Classic.fr",
+      "name": "FR - CINE+ CLASSIC FHD"
+    },
+    {
+      "output_id": "cineplusemotion.fr",
+      "source": "FR1",
+      "source_id": "Ciné+.Emotion.fr",
+      "name": "FR - CINE+ EMOTION FHD"
+    },
+    {
+      "output_id": "cineplusfrisson.fr",
+      "source": "FR1",
+      "source_id": "Ciné+.Frisson.fr",
+      "name": "FR - CINE+ FRISSON FHD ◉"
+    },
+    {
+      "output_id": "cnbcarabiya.ae",
+      "source": "AE1",
+      "source_id": "CNBC.Arabiya.ae",
+      "name": "AR - CNBC ARABIYA HD"
+    },
+    {
+      "output_id": "comedycentral.fr",
+      "source": "FR1",
+      "source_id": "Comedy.Central.fr",
+      "name": "FR - COMEDY CENTRAL FHD"
+    },
+    {
+      "output_id": "comedycentral.it",
+      "source": "IT1",
+      "source_id": "Comedy.Central.it",
+      "name": "IT - COMEDY CENTRAL UHD"
+    },
+    {
+      "output_id": "crimedistrict.fr",
+      "source": "FR1",
+      "source_id": "Crime.District.fr",
+      "name": "FR - CRIME DISTRICT HEVC"
+    },
+    {
+      "output_id": "discoverychannel.fr",
+      "source": "FR1",
+      "source_id": "Discovery.Channel.fr",
+      "name": "FR - DISCOVERY CHANNEL FHD ◉"
+    },
+    {
+      "output_id": "discoveryinvestigation.fr",
+      "source": "FR1",
+      "source_id": "Discovery.Investigation.fr",
+      "name": "FR - DISCOVERY INVESTIGATION FHD"
+    },
+    {
+      "output_id": "disneychannel.fr",
+      "source": "FR1",
+      "source_id": "Disney.Channel.fr",
+      "name": "FR - DISNEY CHANNEL FHD"
+    },
+    {
+      "output_id": "disneyjunior.fr",
+      "source": "FR1",
+      "source_id": "Disney.Junior.fr",
+      "name": "FR - DISNEY JUNIOR FHD"
+    },
+    {
+      "output_id": "dmax.it",
+      "source": "IT1",
+      "source_id": "DMAX.it",
+      "name": "IT - DMAX UHD"
+    },
+    {
+      "output_id": "dmc.eg",
+      "source": "AE1",
+      "source_id": "DMC.ae",
+      "name": "EG - DMC HD ◉"
+    },
+    {
+      "output_id": "equidia.fr",
+      "source": "FR1",
+      "source_id": "Equidia.fr",
+      "name": "FR - EQUIDIA FHD"
+    },
+    {
+      "output_id": "eurosport1.fr",
+      "source": "FR1",
+      "source_id": "Eurosport.1.fr",
+      "name": "FR - EUROSPORT 1 FHD"
+    },
+    {
+      "output_id": "eurosport2.fr",
+      "source": "FR1",
+      "source_id": "Eurosport.2.fr",
+      "name": "FR - EUROSPORT 2 FHD"
+    },
+    {
+      "output_id": "focustv.it",
+      "source": "IT1",
+      "source_id": "Focus.it",
+      "name": "IT - FOCUS FHD"
+    },
+    {
+      "output_id": "foodnetwork.it",
+      "source": "IT1",
+      "source_id": "Food.Network.it",
+      "name": "IT - FOOD NETWORK UHD"
+    },
+    {
+      "output_id": "france2.fr",
+      "source": "FR1",
+      "source_id": "France.2.fr",
+      "name": "FR - FRANCE 2 FHD ◉"
+    },
+    {
+      "output_id": "france24.fr",
+      "source": "FR1",
+      "source_id": "France.24.fr",
+      "name": "FR - FRANCE 24 FHD"
+    },
+    {
+      "output_id": "france3.fr",
+      "source": "FR1",
+      "source_id": "France.3.fr",
+      "name": "FR - FRANCE 3 FHD ◉"
+    },
+    {
+      "output_id": "france3corseviastella.fr",
+      "source": "FR1",
+      "source_id": "France.3.Corse.Via.Stella.fr",
+      "name": "FR - FRANCE 3 CORSE VIA STELLA FHD"
+    },
+    {
+      "output_id": "france3nouvelleaquitaine.fr",
+      "source": "FR1",
+      "source_id": "France.3.-.Aquitaine.fr",
+      "name": "FR - FRANCE 3 AQUITAINE FHD"
+    },
+    {
+      "output_id": "france4.fr",
+      "source": "FR1",
+      "source_id": "France.4.fr",
+      "name": "FR - FRANCE 4 FHD"
+    },
+    {
+      "output_id": "france5.fr",
+      "source": "FR1",
+      "source_id": "France.5.fr",
+      "name": "FR - FRANCE 5 FHD ◉"
+    },
+    {
+      "output_id": "franceinfo.fr",
+      "source": "FR1",
+      "source_id": "France.info.fr",
+      "name": "FR - FRANCE INFO FHD"
+    },
+    {
+      "output_id": "gamberorosso.it",
+      "source": "IT1",
+      "source_id": "Gambero.Rosso.HD.it",
+      "name": "IT - GAMBERO ROSSO UHD"
+    },
+    {
+      "output_id": "gulli.fr",
+      "source": "FR1",
+      "source_id": "Gulli.fr",
+      "name": "FR - GULLI FHD ◉"
+    },
+    {
+      "output_id": "hgtv.it",
+      "source": "IT1",
+      "source_id": "HGTV.it",
+      "name": "IT - HGTV FHD"
+    },
+    {
+      "output_id": "histoire.fr",
+      "source": "FR1",
+      "source_id": "Histoire.fr",
+      "name": "FR - HISTOIRE FHD ◉"
+    },
+    {
+      "output_id": "historychannel.it",
+      "source": "IT1",
+      "source_id": "History.it",
+      "name": "IT - HISTORY HD"
+    },
+    {
+      "output_id": "i24news.fr",
+      "source": "FR1",
+      "source_id": "i24.news.fr",
+      "name": "FR - I24 NEWS FHD"
+    },
+    {
+      "output_id": "iris.it",
+      "source": "IT1",
+      "source_id": "Iris.it",
+      "name": "IT - IRIS UHD"
+    },
+    {
+      "output_id": "italia1.it",
+      "source": "IT1",
+      "source_id": "Italia.1.it",
+      "name": "IT - ITALIA 1 HD"
+    },
+    {
+      "output_id": "italia2.it",
+      "source": "IT1",
+      "source_id": "Italia.2.it",
+      "name": "IT - ITALIA 2 HD"
+    },
+    {
+      "output_id": "kto.fr",
+      "source": "FR1",
+      "source_id": "KTO.fr",
+      "name": "FR - KTO FHD"
+    },
+    {
+      "output_id": "la7.it",
+      "source": "IT1",
+      "source_id": "LA7.HD.it",
+      "name": "IT - LA7 UHD ◉"
+    },
+    {
+      "output_id": "la7d.it",
+      "source": "IT1",
+      "source_id": "LA7.HD.it",
+      "name": "IT - LA7 HD"
+    },
+    {
+      "output_id": "lci.fr",
+      "source": "FR1",
+      "source_id": "LCI.fr",
+      "name": "FR - LCI FHD ◉"
+    },
+    {
+      "output_id": "lequipe21.fr",
+      "source": "FR1",
+      "source_id": "La.chaine.l’Équipe.fr",
+      "name": "FR - LA CHAINE L’ÉQUIPE FHD ◉"
+    },
+    {
+      "output_id": "ln24.be",
+      "source": "BE2",
+      "source_id": "LN24.be",
+      "name": "BE - LN24 HD"
+    },
+    {
+      "output_id": "m6.fr",
+      "source": "FR1",
+      "source_id": "M6.fr",
+      "name": "FR - M6  SD"
+    },
+    {
+      "output_id": "m6music.fr",
+      "source": "FR1",
+      "source_id": "M6.Music.fr",
+      "name": "FR - M6 MUSIC FHD"
+    },
+    {
+      "output_id": "mangas.fr",
+      "source": "FR1",
+      "source_id": "Mangas.fr",
+      "name": "FR - MANGAS FHD"
+    },
+    {
+      "output_id": "mbc1.ae",
+      "source": "AE1",
+      "source_id": "MBC.1.ae",
+      "name": "MYHD - MBC 1 FHD ◉"
+    },
+    {
+      "output_id": "mbc2.ae",
+      "source": "AE1",
+      "source_id": "MBC.2.ae",
+      "name": "MYHD - MBC 2 FHD"
+    },
+    {
+      "output_id": "mbc3.ae",
+      "source": "AE1",
+      "source_id": "MBC.3.ae",
+      "name": "MYHD - MBC 3 FHD"
+    },
+    {
+      "output_id": "mbc4.sa",
+      "source": "AE1",
+      "source_id": "MBC.4.ae",
+      "name": "MYHD - MBC 4 FHD ◉"
+    },
+    {
+      "output_id": "mbcaction.sa",
+      "source": "AE1",
+      "source_id": "MBC.Action.ae",
+      "name": "MYHD - MBC ACTION FHD"
+    },
+    {
+      "output_id": "mbcbollywood.sa",
+      "source": "AE1",
+      "source_id": "MBC.Bollywood.ae",
+      "name": "MYHD - MBC BOLLYWOOD FHD"
+    },
+    {
+      "output_id": "mbcdrama.ae",
+      "source": "AE1",
+      "source_id": "MBC.Drama.ae",
+      "name": "MYHD - MBC DRAMA FHD ◉"
+    },
+    {
+      "output_id": "mbciraq.ae",
+      "source": "AE1",
+      "source_id": "MBC.Iraq.HD.ae",
+      "name": "MYHD - MBC IRAQ HD"
+    },
+    {
+      "output_id": "mbciraq.iq",
+      "source": "AE1",
+      "source_id": "MBC.Iraq.HD.ae",
+      "name": "MYHD - MBC IRAQ FHD ◉"
+    },
+    {
+      "output_id": "mbcmasr.eg",
+      "source": "AE1",
+      "source_id": "MBC.Masr.HD.ae",
+      "name": "MYHD - MBC MASR HD"
+    },
+    {
+      "output_id": "mezzolive.fr",
+      "source": "FR1",
+      "source_id": "Mezzo.Live.HD.fr",
+      "name": "FR - MEZZO LIVE FHD"
+    },
+    {
+      "output_id": "motortrend.it",
+      "source": "IT1",
+      "source_id": "Motor.Trend.it",
+      "name": "IT - MOTOR TREND UHD"
+    },
+    {
+      "output_id": "mtv.fr",
+      "source": "FR1",
+      "source_id": "MTV.fr",
+      "name": "FR - MTV FHD"
+    },
+    {
+      "output_id": "mtv.it",
+      "source": "IT1",
+      "source_id": "MTV.HD.it",
+      "name": "IT - MTV HD"
+    },
+    {
+      "output_id": "museum.fr",
+      "source": "FR1",
+      "source_id": "Museum.fr",
+      "name": "FR - MUSEUM FHD"
+    },
+    {
+      "output_id": "mydeejay.it",
+      "source": "IT1",
+      "source_id": "Deejay.TV.it",
+      "name": "IT - DEEJAY TV UHD"
+    },
+    {
+      "output_id": "nickelodeon.it",
+      "source": "IT1",
+      "source_id": "Nickelodeon.it",
+      "name": "IT - NICKELODEON SD"
+    },
+    {
+      "output_id": "nickjunior.it",
+      "source": "IT1",
+      "source_id": "Nick.Jr.it",
+      "name": "IT - NICK JR HD"
+    },
+    {
+      "output_id": "nilenews.eg",
+      "source": "AE1",
+      "source_id": "Nile.News.ae",
+      "name": "EG - NILE NEWS HD"
+    },
+    {
+      "output_id": "niletv.eg",
+      "source": "AE1",
+      "source_id": "Nile.TV.ae",
+      "name": "EG - NILE TV HD"
+    },
+    {
+      "output_id": "nove.it",
+      "source": "IT1",
+      "source_id": "Nove.it",
+      "name": "IT - NOVE HD"
+    },
+    {
+      "output_id": "nrjhits.fr",
+      "source": "FR1",
+      "source_id": "NRJ.Hits.fr",
+      "name": "FR - NRJ HITS FHD"
+    },
+    {
+      "output_id": "parispremiere.fr",
+      "source": "FR1",
+      "source_id": "Paris.Première.fr",
+      "name": "FR - PARIS PREMIERE FHD ◉"
+    },
+    {
+      "output_id": "polarplus.fr",
+      "source": "FR1",
+      "source_id": "Polar+.fr",
+      "name": "FR - POLAR+ FHD"
+    },
+    {
+      "output_id": "radioitalia.it",
+      "source": "IT1",
+      "source_id": "Radio.Italia.TV.HD.it",
+      "name": "IT - RADIO ITALIA TV UHD"
+    },
+    {
+      "output_id": "realtime.it",
+      "source": "IT1",
+      "source_id": "Real.Time.it",
+      "name": "IT - REAL TIME UHD"
+    },
+    {
+      "output_id": "retequattro.it",
+      "source": "IT1",
+      "source_id": "Rete.4.it",
+      "name": "IT - RETE 4 HD"
+    },
+    {
+      "output_id": "reunion.fr",
+      "source": "FR1",
+      "source_id": "Réunion.1ère.fr",
+      "name": "FR - REUNION 1ERE HD"
+    },
+    {
+      "output_id": "rfmtv.fr",
+      "source": "FR1",
+      "source_id": "RFM.TV.fr",
+      "name": "FR - RFM TV FHD"
+    },
+    {
+      "output_id": "rmcdecouverte.fr",
+      "source": "FR1",
+      "source_id": "RMC.Découverte.fr",
+      "name": "FR - RMC DECOUVERTE FHD ◉"
+    },
+    {
+      "output_id": "rmcsport1.fr",
+      "source": "FR1",
+      "source_id": "RMC.Sport.1.fr",
+      "name": "FR - RMC SPORT 1 FHD"
+    },
+    {
+      "output_id": "rmcstory.fr",
+      "source": "FR1",
+      "source_id": "RMC.Story.fr",
+      "name": "FR - RMC STORY FHD ◉"
+    },
+    {
+      "output_id": "rotanacinema.eg",
+      "source": "AE1",
+      "source_id": "Rotana.Cinema.KSA.ae",
+      "name": "AR - ROTANA CINEMA KSA FHD"
+    },
+    {
+      "output_id": "rotanaclassic.eg",
+      "source": "AE1",
+      "source_id": "Rotana.Classic.ae",
+      "name": "AR - ROTANA CLASSIC FHD ◉"
+    },
+    {
+      "output_id": "rotanadrama.eg",
+      "source": "AE1",
+      "source_id": "Rotana.Drama.ae",
+      "name": "AR - ROTANA DRAMA  FHD ◉"
+    },
+    {
+      "output_id": "rotanakhalijiah.eg",
+      "source": "AE1",
+      "source_id": "Rotana.Khalijia.ae",
+      "name": "AR - ROTANA KHALIJIA  FHD"
+    },
+    {
+      "output_id": "rotanamusic.eg",
+      "source": "AE1",
+      "source_id": "Rotana.Music.ae",
+      "name": "AR - ROTANA MUSIC  FHD"
+    },
+    {
+      "output_id": "rsila1.ch",
+      "source": "CH1",
+      "source_id": "RSI.La.1.ch",
+      "name": "CH - RSI LA 1 FHD ◉"
+    },
+    {
+      "output_id": "rsila2.ch",
+      "source": "CH1",
+      "source_id": "RSI.LA.2.ch",
+      "name": "CH - RSI LA 2 FHD ◉"
+    },
+    {
+      "output_id": "rtl1025tv.it",
+      "source": "IT1",
+      "source_id": "RTL.102.5.HD.it",
+      "name": "IT - RTL 102.5 UHD"
+    },
+    {
+      "output_id": "rtl9.fr",
+      "source": "FR1",
+      "source_id": "RTL.9.fr",
+      "name": "FR - RTL 9 FHD"
+    },
+    {
+      "output_id": "rtlclub.be",
+      "source": "BE2",
+      "source_id": "CLUB.RTL.be",
+      "name": "BE - CLUB RTL HD"
+    },
+    {
+      "output_id": "rtlplug.be",
+      "source": "BE2",
+      "source_id": "PLUG.RTL.be",
+      "name": "BE - PLUG RTL HD"
+    },
+    {
+      "output_id": "seasons.fr",
+      "source": "FR1",
+      "source_id": "Seasons.fr",
+      "name": "FR - SEASONS FHD ◉"
+    },
+    {
+      "output_id": "skyarte.it",
+      "source": "IT1",
+      "source_id": "Sky.Arte.it",
+      "name": "IT - SKY ARTE HD"
+    },
+    {
+      "output_id": "skyatlantic.it",
+      "source": "IT1",
+      "source_id": "Sky.Atlantic.it",
+      "name": "IT - SKY ATLANTIC HD"
+    },
+    {
+      "output_id": "skycinemaaction.it",
+      "source": "IT1",
+      "source_id": "Sky.Cinema.Action.it",
+      "name": "IT - SKY CINEMA ACTION HD"
+    },
+    {
+      "output_id": "skycinemacollection.it",
+      "source": "IT1",
+      "source_id": "Sky.Cinema.Collection.it",
+      "name": "IT - SKY CINEMA COLLECTION FHD"
+    },
+    {
+      "output_id": "skycinemacomedy.it",
+      "source": "IT1",
+      "source_id": "Sky.Cinema.Comedy.it",
+      "name": "IT - SKY CINEMA COMEDY HD"
+    },
+    {
+      "output_id": "skycinemadrama.it",
+      "source": "IT1",
+      "source_id": "Sky.Cinema.Drama.it",
+      "name": "IT - SKY CINEMA DRAMA HD"
+    },
+    {
+      "output_id": "skycinemadue.it",
+      "source": "IT1",
+      "source_id": "Sky.Cinema.Due.it",
+      "name": "IT - SKY CINEMA DUE HD"
+    },
+    {
+      "output_id": "skycinemafamily.it",
+      "source": "IT1",
+      "source_id": "Sky.Cinema.Family.it",
+      "name": "IT - SKY CINEMA FAMILY HD"
+    },
+    {
+      "output_id": "skycinemaromance.it",
+      "source": "IT1",
+      "source_id": "Sky.Cinema.Romance.it",
+      "name": "IT - SKY CINEMA ROMANCE HD"
+    },
+    {
+      "output_id": "skycinemauno.it",
+      "source": "IT1",
+      "source_id": "Sky.Cinema.Uno.it",
+      "name": "IT - SKY CINEMA UNO HD"
+    },
+    {
+      "output_id": "skydocumentaries.it",
+      "source": "IT1",
+      "source_id": "Sky.Documentaries.it",
+      "name": "IT - SKY DOCUMENTARIES FHD"
+    },
+    {
+      "output_id": "skyinvestigation.it",
+      "source": "IT1",
+      "source_id": "Sky.Investigation.it",
+      "name": "IT - SKY INVESTIGATION HD"
+    },
+    {
+      "output_id": "skynature.it",
+      "source": "IT1",
+      "source_id": "Sky.Nature.it",
+      "name": "IT - SKY NATURE HD"
+    },
+    {
+      "output_id": "skysport24.it",
+      "source": "IT1",
+      "source_id": "Sky.Sport.24.it",
+      "name": "IT - SKY SPORT 24 HD"
+    },
+    {
+      "output_id": "skysportarena.it",
+      "source": "IT1",
+      "source_id": "Sky.Sport.Arena.it",
+      "name": "IT - SKY SPORT ARENA HD"
+    },
+    {
+      "output_id": "skysportcalcio.it",
+      "source": "IT1",
+      "source_id": "Sky.Sport.Calcio.it",
+      "name": "IT - SKY SPORT CALCIO HD"
+    },
+    {
+      "output_id": "skysportgolf.de",
+      "source": "IT1",
+      "source_id": "Sky.Sport.Golf.it",
+      "name": "IT - SKY SPORT GOLF HD"
+    },
+    {
+      "output_id": "skysportmax.it",
+      "source": "IT1",
+      "source_id": "Sky.Sport.Max.it",
+      "name": "IT - SKY SPORT MAX HD"
+    },
+    {
+      "output_id": "skysportmotogp.it",
+      "source": "IT1",
+      "source_id": "Sky.Sport.MotoGP.it",
+      "name": "IT - SKY SPORT MOTOGP HD"
+    },
+    {
+      "output_id": "skysporttennis.it",
+      "source": "IT1",
+      "source_id": "Sky.Sport.Tennis.it",
+      "name": "IT - SKY SPORT TENNIS HD"
+    },
+    {
+      "output_id": "skysportuno.it",
+      "source": "IT1",
+      "source_id": "Sky.Sport.Uno.it",
+      "name": "IT - SKY SPORT UNO HD"
+    },
+    {
+      "output_id": "skytg24.it",
+      "source": "IT1",
+      "source_id": "Sky.TG24.it",
+      "name": "IT - SKY TG24 UHD"
+    },
+    {
+      "output_id": "skyuno.it",
+      "source": "IT1",
+      "source_id": "Sky.Uno.it",
+      "name": "IT - SKY UNO HD"
+    },
+    {
+      "output_id": "srf1.ch",
+      "source": "CH1",
+      "source_id": "SRF.1.ch",
+      "name": "CH - SRF 1 FHD"
+    },
+    {
+      "output_id": "srf2.ch",
+      "source": "CH1",
+      "source_id": "SRF.zwei.ch",
+      "name": "CH - SRF ZWEI  HD"
+    },
+    {
+      "output_id": "srfinfo.ch",
+      "source": "CH1",
+      "source_id": "SRF.info.ch",
+      "name": "CH - SRF INFO HD"
+    },
+    {
+      "output_id": "startv.ch",
+      "source": "CH1",
+      "source_id": "Star.TV.ch",
+      "name": "CH - STAR TV HD"
+    },
+    {
+      "output_id": "super.it",
+      "source": "IT1",
+      "source_id": "Super!.it",
+      "name": "IT - SUPER SD"
+    },
+    {
+      "output_id": "t18.fr",
+      "source": "FR1",
+      "source_id": "T18.fr",
+      "name": "FR - T18 FHD"
+    },
+    {
+      "output_id": "tcm.fr",
+      "source": "FR1",
+      "source_id": "TCM.Cinéma.fr",
+      "name": "FR - TCM CINEMA FHD"
+    },
+    {
+      "output_id": "telebasel.ch",
+      "source": "CH1",
+      "source_id": "Telebasel.ch",
+      "name": "CH - TELEBASEL FHD"
+    },
+    {
+      "output_id": "telegrenoble.fr",
+      "source": "FR1",
+      "source_id": "Télé.Grenoble.fr",
+      "name": "FR - TELE GRENOBLE FHD"
+    },
+    {
+      "output_id": "telez.ch",
+      "source": "CH1",
+      "source_id": "Tele.Z.ch",
+      "name": "CH - TELE Z FHD"
+    },
+    {
+      "output_id": "teva.fr",
+      "source": "FR1",
+      "source_id": "Téva.fr",
+      "name": "FR - TEVA FHD"
+    },
+    {
+      "output_id": "tf1.fr",
+      "source": "FR1",
+      "source_id": "TF1.fr",
+      "name": "FR - TF1 FHD ◉"
+    },
+    {
+      "output_id": "tf1seriesfilms.fr",
+      "source": "FR1",
+      "source_id": "TF1.Séries-Films.fr",
+      "name": "FR - TF1 SERIES-FILMS FHD ◉"
+    },
+    {
+      "output_id": "tfx.fr",
+      "source": "FR1",
+      "source_id": "TFX.fr",
+      "name": "FR - TFX FHD ◉"
+    },
+    {
+      "output_id": "tlc.fr",
+      "source": "FR1",
+      "source_id": "TLC.fr",
+      "name": "FR - TLC FHD"
+    },
+    {
+      "output_id": "tmc.fr",
+      "source": "FR1",
+      "source_id": "TMC.fr",
+      "name": "FR - TMC FHD ◉"
+    },
+    {
+      "output_id": "topcrime.it",
+      "source": "IT1",
+      "source_id": "Top.Crime.it",
+      "name": "IT - TOP CRIME UHD"
+    },
+    {
+      "output_id": "traceurban.fr",
+      "source": "FR1",
+      "source_id": "Trace.Urban.fr",
+      "name": "FR - TRACE URBAN FHD"
+    },
+    {
+      "output_id": "tv7bordeaux.fr",
+      "source": "FR1",
+      "source_id": "TV7.Bordeaux.fr",
+      "name": "FR - TV7 BORDEAUX FHD"
+    },
+    {
+      "output_id": "tvbreizh.fr",
+      "source": "FR1",
+      "source_id": "TV.Breizh.fr",
+      "name": "FR - TV BREIZH FHD"
+    },
+    {
+      "output_id": "tvo.ch",
+      "source": "CH1",
+      "source_id": "TVO.ch",
+      "name": "CH - TVO FHD"
+    },
+    {
+      "output_id": "vrt1.be",
+      "source": "BE2",
+      "source_id": "VRT.1.be",
+      "name": "BE - VRT 1 FHD ◉"
+    },
+    {
+      "output_id": "vrtcanvas.be",
+      "source": "BE2",
+      "source_id": "CANVAS.be",
+      "name": "BE - CANVAS UHD ◉"
+    },
+    {
+      "output_id": "vtm3.be",
+      "source": "BE2",
+      "source_id": "VTM3.be",
+      "name": "BE - VTM3 FHD ◉"
+    },
+    {
+      "output_id": "vtmgold.be",
+      "source": "BE2",
+      "source_id": "VTM.GOLD.be",
+      "name": "BE - VTM GOLD HD"
+    },
+    {
+      "output_id": "w9.fr",
+      "source": "FR1",
+      "source_id": "W9.fr",
+      "name": "FR - W9 FHD ◉"
+    },
+    {
+      "output_id": "warnertv.fr",
+      "source": "FR1",
+      "source_id": "Warner.TV.Next.fr",
+      "name": "FR - WARNER TV NEXT FHD"
+    },
+    {
+      "output_id": "zeeaflam.ae",
+      "source": "AE1",
+      "source_id": "Zee.Aflam.ae",
+      "name": "AR - ZEE AFLAM FHD"
+    },
+    {
+      "output_id": "zeealwan.ae",
+      "source": "AE1",
+      "source_id": "Zee.Alwan.ae",
+      "name": "AR - ZEE ALWAN FHD"
+    }
+  ],
+  "excluded_conflicting_existing_ids": [
+    "3plus.ch",
+    "EPG-TV",
+    "alarabiya.sa",
+    "bfmgrandlille.fr",
+    "vtm2.be"
+  ],
+  "limitations": "Only existing unique Xtream IDs with guide candidates; no invented schedules, no automatic mapping for missing Xtream IDs.",
+  "caution": "Guide with programmes from public EPG sources only; no live broadcast confirmation; empty or unmatched channels remain empty."
+}
