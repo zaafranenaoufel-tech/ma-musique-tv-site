@@ -1,7 +1,7 @@
 {
-  "updated_utc": "2026-11-12T04:18:07.257503+00:00",
+  "updated_utc": "2026-11-12T16:23:11.116475+00:00",
   "channels_with_programmes": 374,
-  "programmes": 36182,
+  "programmes": 37093,
   "sources_downloaded": [
     "FR1",
     "AE1",
@@ -13,15 +13,15 @@
   "sources_failed": [],
   "target_aliases": 360,
   "epg_diagnostics": {
-    "Al.Masriya.fr": 15,
-    "rotanacinema.eg": 43,
-    "rotanacinema.sa": 43,
-    "Tunisia.1.fr": 15,
-    "Watania.2.fr": 16
+    "Al.Masriya.fr": 19,
+    "rotanacinema.eg": 44,
+    "rotanacinema.sa": 44,
+    "Tunisia.1.fr": 19,
+    "Watania.2.fr": 20
   },
   "official_bein_channels": 21,
   "official_rotana_channels": 5,
-  "official_rotana_programmes": 298,
+  "official_rotana_programmes": 297,
   "official_rotana_attempted": 7,
   "official_rotana_failures": {
     "Rotana.Clip.ae": "No current programme schedule published",
@@ -32,17 +32,17 @@
   "official_canal_attempted": 4,
   "official_canal_failures": {
     "canalplusboxoffice.fr": "HTTP Error 403: Forbidden",
-    "canalplussport.fr": "HTTP Error 403: Forbidden",
     "canalplussport360.fr": "HTTP Error 403: Forbidden",
+    "canalplussport.fr": "HTTP Error 403: Forbidden",
     "canalplusfoot.fr": "HTTP Error 403: Forbidden"
   },
   "official_national_channels": 19,
-  "official_national_programmes": 1926,
+  "official_national_programmes": 1477,
   "official_national_attempted": 20,
   "official_national_failures": {
     "raiscuola.it": "HTTP Error 404: Not Found"
   },
-  "official_bein_programmes": 662,
+  "official_bein_programmes": 655,
   "official_bein_attempted": 21,
   "official_bein_failures": {},
   "warning": "Guide scheduling is not a guarantee of live IPTV broadcast. Unmapped Xtream channels need separate associations."
